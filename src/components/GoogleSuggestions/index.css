@@ -1,0 +1,33 @@
+/* Write your CSS here */
+
+.google {
+  height: 120px;
+  width: 130px;
+  text-align: center;
+  margin-left: 75px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 600px;
+  margin-top: 100px;
+}
+search-display {
+  display: flex;
+  flex-direction: row;
+
+  border-radius: 120px;
+}
+.search-icon {
+  height: 20px;
+  width: 20px;
+  justify-content: center;
+}
+.smallbox {
+  box-shadow: 0px 4px 16px 0px;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+}
