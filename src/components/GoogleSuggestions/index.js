@@ -1,4 +1,3 @@
-// Write your code here
 import {Component} from 'react'
 
 import Suggestionitem from '../SuggestionItem'
@@ -10,6 +9,10 @@ class GoogleSuggestions extends Component {
 
   searchingdata = event => {
     this.setState({search: event.target.value})
+  }
+
+  maindispaly = suggestion => {
+    this.setState({search: suggestion})
   }
 
   render() {
@@ -33,13 +36,22 @@ class GoogleSuggestions extends Component {
               alt="img_2"
               className="search-icon"
             />
-            <input type="search" onChange={this.searchingdata} />
+            <input
+              type="search"
+              onChange={this.searchingdata}
+              value={search}
+              placeholder="google search"
+            />
           </div>
-          <div>
+          <ul>
             {filtereddata.map(each => (
-              <suggestionitem key={each.id} item={each} />
+              <Suggestionitem
+                key={each.id}
+                item={each}
+                maindispaly={this.maindispaly}
+              />
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     )
