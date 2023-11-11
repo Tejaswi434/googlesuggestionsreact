@@ -1,7 +1,7 @@
 // Write your code here
 import {Component} from 'react'
 
-import suggestionitem from '../SuggestionItem'
+import Suggestionitem from '../SuggestionItem'
 
 import './index.css'
 
