@@ -1,1 +1,19 @@
 /* Write your CSS here */
+.simple_element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list {
+  list-style-type: none;
+}
+.but_size {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
+.outer_but {
+  background: none;
+  border: 0;
+}
