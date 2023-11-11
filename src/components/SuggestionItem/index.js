@@ -1,6 +1,6 @@
 // Write your code here
 
-const suggestionitem = props => {
+const Suggestionitem = props => {
   const {everyitem} = props
   const {suggestion} = everyitem
   return (
